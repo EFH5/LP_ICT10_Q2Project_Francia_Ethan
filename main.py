@@ -60,9 +60,9 @@ club_data = {
     }
 }
 
-def show_club_info(event):
+def show_club_info():
     selected = document.querySelector("#clubs").value
-    info_box = document.querySelector("#club-info") #Gathering chosen club
+    info_box = document.querySelector("#club-info")
 
     data = club_data[selected]
 
@@ -78,11 +78,9 @@ def show_club_info(event):
     info_box.innerHTML = html_output
 
 
-document.querySelector("#search-btn").addEventListener("click", show_club_info) #output
-
-
 
 
 
     
+
 
