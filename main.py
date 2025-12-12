@@ -60,9 +60,9 @@ club_data = {
     }
 }
 
-def show_club_info():
+def show_club_info(event=None):
     selected = document.querySelector("#clubs").value
-    info_box = document.querySelector("#club-info")
+    info_box = document.querySelector("#club-info") #even=None got from ChatGPT, without it there was a consistent error message, though it functioned perfectly
 
     data = club_data[selected]
 
@@ -82,5 +82,6 @@ def show_club_info():
 
 
     
+
 
 
