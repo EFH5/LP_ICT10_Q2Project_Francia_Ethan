@@ -1,7 +1,7 @@
 from pyscript import document, display
 
 def calculate_grade(e): 
-    grade1 = float(document.getElementById("grade1").value)
+    grade1 = float(document.getElementById("grade1").value) #Collect and assign input data into variables
     grade2 = float(document.getElementById("grade2").value)
     grade3 = float(document.getElementById("grade3").value)
     grade4 = float(document.getElementById("grade4").value)
@@ -10,12 +10,12 @@ def calculate_grade(e):
 
     
 
-    avg = (grade1 + grade2 + grade3 + grade4 + grade5 + grade6)/6
+    avg = (grade1 + grade2 + grade3 + grade4 + grade5 + grade6)/6 #Calculating variables into the GWA
 
     fname = document.getElementById("fname").value
     lname = document.getElementById("lname").value
 
-    full_Name = fname + " " + lname
+    full_Name = fname + " " + lname #Assigned name from collected input
 
     final_grade = avg
 
@@ -32,8 +32,8 @@ club_data = {
         "Location": "Tech Lab 2",
         "Handler": "Mr. Krabalot",
         "Category": "Academic",
-        "Notes": "Join competitions and hands-on robotics training."
-    },
+        "Notes": "Join competitions and hands-on robotics training." 
+    }, #assigning details into dictionaries for simplicity
     "Science": {
         "Description": "Exploring biology, chemistry, physics, and scientific experiments.",
         "Time": "Every Thursday, 3:00 PM - 4:30 PM",
@@ -62,7 +62,7 @@ club_data = {
 
 def show_club_info(event):
     selected = document.querySelector("#clubs").value
-    info_box = document.querySelector("#club-info")
+    info_box = document.querySelector("#club-info") #Gathering chosen club
 
     data = club_data[selected]
 
@@ -78,10 +78,11 @@ def show_club_info(event):
     info_box.innerHTML = html_output
 
 
-document.querySelector("#search-btn").addEventListener("click", show_club_info)
+document.querySelector("#search-btn").addEventListener("click", show_club_info) #output
 
 
 
 
 
     
+
