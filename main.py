@@ -47,7 +47,7 @@ club_data = {
         "Location": "Science Lab 1, 2, Physics Lab",
         "Handler": "Ms. Matapang",
         "Category": "Academic",
-        "Notes": "Science fairs, experiments, and academic contests."
+        "Notes": "Members gain the opportunity to attend science fairs, experiments, and academic contests."
     },
     "Communication Arts": {
         "Description": "Develops skills in writing, speaking, journalism, and media.",
@@ -55,7 +55,7 @@ club_data = {
         "Location": "Room 304",
         "Handler": "Mrs. Raur",
         "Category": "Academic",
-        "Notes": "School paper, broadcasting, and creative writing."
+        "Notes": "Members handle the school paper, broadcasting, and creative writing activities."
     },
     "Dance Club": {
         "Description": "Focuses on modern, cultural, and performance dance.",
@@ -63,7 +63,7 @@ club_data = {
         "Location": "Gymnasium, Dance Club Room",
         "Handler": "Coach Taro",
         "Category": "Non-Academic",
-        "Notes": "Performances for school events and competitions."
+        "Notes": "Members gain the opportunity to join  school events and competitions for performances."
     }
 }
 
@@ -89,6 +89,7 @@ def show_club_info(event=None):
 
 
     
+
 
 
 
