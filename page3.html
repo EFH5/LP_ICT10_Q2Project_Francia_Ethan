@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+</head>
+
+<style>
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(102,127,68);
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: darkgreen;
+    margin-bottom: 40px;
+}
+
+select {
+    width: 40%;
+    background-color: palegoldenrod;
+    margin-top: 10px;
+}
+
+button {
+    width: 40%;
+    background-color: darkgreen;
+    color: palegoldenrod;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#textbox {
+    background-color: palegoldenrod;
+    width: 40%;
+    padding: 20px;
+    box-shadow: 10px 15px;
+    text-align: left;
+    margin: auto;
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(211, 211, 211, 0.35);
+    text-align: center;
+    padding: 0;
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: auto;
+}
+</style>
+
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark" style="font-weight: bold;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-graduation-cap"></i> Colegio de Las Piñas</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Grade Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="page3.html">Clubs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container-fluid">
+    <h1>CDLP Club Information System</h1><hr>
+        <div>
+            <label for="clubs" style="color: wheat;">Select Club:</label><br>
+            <select id="clubs" name="clubs" >
+                <option value="Robotics">Robotics</option>
+                <option value="Science">Science</option>
+                <option value="Communication Arts">Com. Arts</option>
+                <option value="Dance Club">Dance</option>
+            </select>
+        </div>
+
+    <button id="search-btn">Search Club Information</button>
+
+    <div id="textbox">
+        <h3>Club Info:</h3>
+        <p id="club-info">
+            Description : <br>
+            Time : <br>
+            Location : <br>
+            Handler : <br>
+            Category : <br>
+        </p>
+    </div>
+</div> <br>
+
+    <footer>
+        Colegio De Las Pinas    |
+        Our Home, your future.
+    </footer>
+    <py-script src="main.py"></py-script>
+</body>
+
+</html>

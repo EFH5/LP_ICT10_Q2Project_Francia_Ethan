@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+</head>
+
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(102,127,68);
+    }
+    nav {
+        background-color: darkgreen;
+    }
+    #top {
+        background-repeat: no-repeat;    
+        background-image: url("laspinas.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;      
+        background-position: center; 
+        width: 100%;                 
+        padding: 100px 20px;         
+        color: white;    
+        height: 480px;
+    }   
+    #bottom {
+        background-color: palegoldenrod;
+        width: 1000px;
+        border-radius: 3px;
+        margin-bottom: 50px;
+    }
+    #bottom .btn {
+        text-align: center;
+    }
+    #information {
+        display: flex;
+        margin: auto;
+    }
+    h2 {
+        text-align: center;
+    }
+    .green-text {
+        color: darkgreen;
+        font-weight: bold;
+    }
+    footer {
+        background-color: rgb(211, 211, 211, 0.35);
+        margin: auto;
+        text-align: center;
+        padding: 0 ;
+        height: 35px;
+        width: 100%; 
+        font-size: 20px;    
+    }
+    .btn {
+        display: block;
+        margin: 0 auto;
+        background-color: green;
+        color: wheat;
+    }
+</style>
+
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark" style="font-weight: bold;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-graduation-cap"></i> Colegio de Las Piñas</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Grade Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Clubs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid" id="top">
+        <h1 style="font-weight: bolder; font-size: 60px; margin-top: 50px; font-family:Verdana, Geneva, Tahoma, sans-serif;"> <span class="text-border">We are Colegio De Las Pinas</span></h1>
+        <p>Building a better, brighter future, one child at a time</p>
+    </div>
+   
+    <div class="container mt-3" id="bottom">
+        <h2>About Us</h2> <hr>
+
+        <div class="row justify-content-center ">
+            <div class="col-md-6">
+                Colegio De Las Pinas is a modern, professional educational institute that seeks to give the healthy minds of tomorrow a space to bloom. For over one day, Colegio De Las Pinas has given its all in ensuring that the next generation grows up to be the best they can be, with our long spanning tradition and values.
+                <br><br> Our faciltiies are equipped with state-of-the-art equipment, professional staff, and a focused curriculum that caters to the needs of every child, giving them the space and place needed to learn, grow, and thrive the best they can.
+            </div>
+
+            <div class="col-md-6">
+                We offer:<br>
+                Senior High School 
+                Undergraduate Programs
+                College Programs
+                Bachelor Degree Programs<br><br>
+
+                In the following clusters:<br>
+                <div class="green-text">
+                    Academic Track (Life Science)<br>
+                    Academic Track (Business)<br>
+                    Academic Track (Liberal Arts)<br>
+                    Academic Track (Computing)<br>
+                    Academic Track (Engineering)<br><br>
+                </div>
+                <button class="btn">Apply Now!</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Colegio De Las Pinas    |
+        Our Home, your future.
+    </footer>
+    <py-script src="main.py"></py-script>
+</body>
+
+</html>

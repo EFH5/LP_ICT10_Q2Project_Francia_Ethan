@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+</head>
+
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgb(102,127,68);
+    }
+    #titlecard {
+        text-align: center;
+        max-width: 750px;
+        background-color: palegoldenrod;
+        padding: 8px;
+        height: 850px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+    .col-md-2 {
+        margin: auto;
+    }
+    label {
+        background-color: green;
+        border-radius: 2px;
+        width: 96px;
+    }
+    h1 {
+        background-color: green;
+        border-radius: 2px;
+    }
+    .container {
+        color: white;
+    }
+    p {
+        color: black;
+    }
+    button {
+        color: green;
+    }
+    .form-check-input {
+        width: 100px;
+    }
+    #box {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    #box1 {
+        background-color: white;
+        width: 500px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    nav {
+        background-color: darkgreen;
+    }
+    footer {
+        background-color: rgb(211, 211, 211, 0.35);
+        margin: auto;
+        text-align: center;
+        padding: 0 ;
+        height: 35px;
+        width: 100%; 
+        font-size: 20px; 
+   
+    }
+</style>
+
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark" style="font-weight: bold;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-graduation-cap"></i> Colegio de Las Piñas
+</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="page2.html">Grade Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Clubs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3" id="titlecard">
+        <h1>Student Grade Calculator</h1>
+        <div id="box">
+            <label for="fname"> First Name </label>
+            <input class="form-check-input" type="text" id="fname">
+
+            <label for="lname"> Last Name </label>
+            <input class="form-check-input" type="text" id="lname">
+        
+        
+        </div>
+
+        <p style="margin-top: 15px;">Enter Grades:</p>
+    <div class="row" id="box">   
+         <div class="col-md-2">
+            <label for="grade1"> Science </label>
+            <input class="form-check-input" type="text" id="grade1" placeholder="Grade"><br>
+            
+            <label for="grade1">English</label>
+            <input class="form-check-input" type="text" id="grade2" placeholder="Grade"><br>
+            
+            <label for="grade1">ICT</label>
+            <input class="form-check-input" type="text" id="grade3" placeholder="Grade">
+         </div><br>
+
+         <div class="col-md-2">
+            <label for="grade1">Math</label>
+            <input class="form-check-input" type="text" id="grade4" placeholder="Grade"><br>
+            
+            <label for="grade1">Filipino</label>
+            <input class="form-check-input" type="text" id="grade5" placeholder="Grade"><br>
+            
+            <label for="grade1">PE</label>
+            <input class="form-check-input" type="text" id="grade6" placeholder="Grade">
+         </div>
+    </div> 
+
+<button class="btn btn-success btn-lg" py-click="calculate_grade">Calculate General Weighted Average</button>
+        <div id="box1">
+        <p id="full_Name"></p>
+
+        <p id="output"></p>
+
+        <p id="final_grade" style="font-weight: bold;"></p>
+        </div>
+    </div>
+    <footer>
+        Colegio De Las Pinas    |
+        Our Home, your future.
+    </footer>
+    <py-script src="main.py"></py-script>
+</body>
+
+</html>
