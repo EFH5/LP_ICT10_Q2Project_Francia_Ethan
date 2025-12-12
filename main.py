@@ -1,29 +1,36 @@
 from pyscript import document, display
 
-def calculate_grade(e): 
-    grade1 = float(document.getElementById("grade1").value) #Collect and assign input data into variables
+def calculate_grade(e=None): 
+    grade1 = float(document.getElementById("grade1").value)
     grade2 = float(document.getElementById("grade2").value)
     grade3 = float(document.getElementById("grade3").value)
     grade4 = float(document.getElementById("grade4").value)
     grade5 = float(document.getElementById("grade5").value)
     grade6 = float(document.getElementById("grade6").value)
+    #get input value and assign to variables
 
-    
-
-    avg = (grade1 + grade2 + grade3 + grade4 + grade5 + grade6)/6 #Calculating variables into the GWA
+    avg = (grade1 + grade2 + grade3 + grade4 + grade5 + grade6) / 6
+    #variables used to get final output
 
     fname = document.getElementById("fname").value
     lname = document.getElementById("lname").value
+    full_Name = fname + " " + lname
 
-    full_Name = fname + " " + lname #Assigned name from collected input
+    # output with HTML support
+    document.getElementById("output").innerHTML = (
+        f"Science: {grade1}<br>"
+        f"English: {grade2}<br>"
+        f"ICT: {grade3}<br>"
+        f"Math: {grade4}<br>"
+        f"Filipino: {grade5}<br>"
+        f"PE: {grade6}"
+    )
 
-    final_grade = avg
+    document.getElementById("full_Name").innerHTML = f"For: {full_Name}"
 
-    display(f"Science: {grade1}<br>English: {grade2}<br>ICT: {grade3}<br>Math: {grade4}<br>Filipino: {grade5}<br>PE: {grade6}", target="output")   
-    display(f"For: {full_Name}", target="full_Name")
-    display(f"Your General Weighted Average is: {final_grade:.2f}", target="final_grade")
-
-
+    document.getElementById("final_grade").innerHTML = (
+        f"Your General Weighted Average is: <strong>{avg:.2f}</strong>"
+    )
 
 club_data = {
     "Robotics": {
@@ -82,6 +89,7 @@ def show_club_info(event=None):
 
 
     
+
 
 
 
